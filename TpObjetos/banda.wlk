@@ -31,9 +31,9 @@ class Trap inherits Banda{
 }
 
 class Indie inherits Banda{
-    const instrumentos 
+    const cantInstrumentos 
     
     override method popularidad() = 3.14 * nombre.size()
 
-    override method precioExtra() = 500 * instrumentos 
+    override method precioExtra() = 500 * cantInstrumentos 
 }

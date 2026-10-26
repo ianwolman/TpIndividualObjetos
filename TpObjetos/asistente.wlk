@@ -25,7 +25,7 @@ class Asistente{
 
     method bandasPorLasQueComproUnaEntrada() = historialDeEntradas.map({entrada => entrada.banda()}).asSet()
 
-    method gastoHistorico() = historialDeEntradas.map({entrada => entrada.precioFinal()})
+    method gastoHistorico() = historialDeEntradas.map({entrada => entrada.precioFinal()}).sum()
 }
 
 object fan{
