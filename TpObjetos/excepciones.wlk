@@ -1,0 +1,1 @@
+class NoTieneSaldoPositivoException inherits Exception(message = "TIENE SALDO NEGATIVO, NO PUEDE COMPRAR ENTRADA"){}
