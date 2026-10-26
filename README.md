@@ -49,6 +49,7 @@ Además, debe poder bonificar a los asistentes vip. Esto hace que el descuento p
 
 ### Explicacion
 Se decidio aplicar herencia ya que las bandas comparten comportamiento en comun como que todos calculan el presupuesto como cannon mas un precio extra. Lo que se modifica en las subclases es el precio extra. 
+precioExtra(), cannon() y popularidad() son metodos polimorficos en las clases Rock, Trap e Indie
 El cannon se decidio hacerlo como un metodo para poder modificarlo en las subclases (Trap). Para el cannon de Trap se entendio que es 1000000 (cannon base) * popularidad. Entonces, si la popularidad es 0 => el cannon es 0 y si la popularidad es 1000 => el cannon es 1000000000.
 Para calcular la ganancia total se decidio calcular los activos por un lado y los pasivos por otro. Los activos se calculan sumando los gastos historicos de cada asistente, siendo el gasto historico (metodo en asistente por responsabilidad) de un asistente la suma de los precios de cada entrada comprada por el asistente sin el descuento. Los pasivos son la suma de los presupuestos de cada banda.
 La cantidad total de entradas se calculo mediante un metodo que reune todas las listas de entradas de todos los asistentes en una lista. Una lista de listas. Luego se aplica flatten() para que sea solo una lista. Despues se le aplica size() para tener la cantidad de elementos
